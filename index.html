@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="PFstylesheet.css" />
+    <link rel="stylesheet" href="PFmediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav id="desktop_nav">
+      <div class="logo">
+        <img
+          src="./assets/ab.png"
+          alt="logo"
+          style="height: 100px; width: 100px; border-radius: 50%"
+        />
+      </div>
+      <div>
+        <ul class="nav_link">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Connect With Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="nav">
+      <div class="logo">Aravind Balakrsihnan</div>
+      <div class="nav_menu">
+        <div class="humburger_icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu_link">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Connect With Me</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/ARVI-B.png" alt="Profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Aravind Balakrsihnan</h1>
+        <p class="section__text__p2">Aspiring Full stack developer</p>
+        <div class="btn_container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/FSD-Resume.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socails_container">
+          <img
+            src="./assets/linkedin.png"
+            alt="linkedin Profile"
+            class="linkedin_icon"
+            onclick="location.href='https://linkedin.com/in/aravindarvi12' "
+          />
+          <img
+            src="./assets/github.png"
+            alt="github Profile"
+            class="github_icon"
+            onclick="location.href='https://github.com/aravindarvi12' "
+          />
+        </div>
+      </div>
+    </section>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
